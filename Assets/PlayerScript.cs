@@ -27,17 +27,12 @@ public class PlayerScript : MonoBehaviour
         {
             v.x = moveSpeed;
         }
+
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            v.x = -moveSpeed;
+        }
         else
-        {
-            v.x = 0;
-        }
-
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            v.x -= moveSpeed;
-        }
-        else 
         {
             v.x = 0;
         }
